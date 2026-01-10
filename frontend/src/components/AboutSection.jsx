@@ -23,10 +23,14 @@ export const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image Placeholder */}
             <div className="order-2 md:order-1">
-              <div className="w-full h-[400px] bg-gradient-to-br from-yellow-100 to-blue-100 rounded-3xl flex items-center justify-center shadow-xl">
-                <div className="text-center">
-                  <p className="text-gray-500 text-lg">About Image Placeholder</p>
-                  <p className="text-gray-400 text-sm mt-2">Add clinic or team image here</p>
+              <div className="w-full h-[400px] bg-gradient-to-br from-yellow-100 to-blue-100 rounded-3xl flex flex-col items-center justify-center shadow-xl border-4 border-dashed border-yellow-300">
+                <div className="text-center p-8">
+                  <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <span className="text-4xl">🏥</span>
+                  </div>
+                  <p className="text-gray-600 text-lg font-bold mb-2">About/Clinic Image Area</p>
+                  <p className="text-gray-500 text-sm mb-2">Add clinic interior, team photo, or Dr. Patel's photo</p>
+                  <p className="text-gray-400 text-xs">(Replace this placeholder with your image)</p>
                 </div>
               </div>
             </div>
