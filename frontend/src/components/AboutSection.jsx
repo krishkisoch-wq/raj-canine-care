@@ -34,11 +34,25 @@ export const AboutSection = () => {
             {/* Content */}
             <div className="order-1 md:order-2">
               <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                At <span className="font-bold text-blue-900">Raj Canine Care</span>, we believe pets are family.
+                At <span className="font-bold text-blue-900">Raj Canine Care</span>, we believe pets are family. 🐾
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Our clinic is dedicated to providing ethical, transparent, and compassionate care for dogs and cats.
               </p>
+
+              <div className="bg-blue-50 rounded-2xl p-6 mb-6 border-l-4 border-blue-600">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Meet Dr. R. D. Patel</h3>
+                <p className="text-sm text-gray-600 mb-2">(B.V.Sc. & A.H.)</p>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  With over two decades of experience, Dr. R.D. Patel is a pioneer in small animal veterinary care and dog grooming in Gujarat. 
+                  After earning his degree from Gujarat Agricultural University, Anand in 1986, he gained international exposure 
+                  in London (1991-95), bringing advanced pet care techniques to Vadodara.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Former President of Vadodara Veterinary Association, Dr. Patel has been serving the pet community 
+                  with dedication and excellence, making Raj Canine Care a trusted name in pet healthcare.
+                </p>
+              </div>
 
               <div className="space-y-4 mb-8">
                 {values.map((value, index) => (
@@ -53,7 +67,7 @@ export const AboutSection = () => {
 
               <p className="text-lg text-gray-600 leading-relaxed">
                 Whether it's a routine check-up or grooming session,{' '}
-                <span className="font-semibold text-blue-900">your pet's comfort comes first.</span>
+                <span className="font-semibold text-blue-900">your pet's comfort comes first. 🐾</span>
               </p>
             </div>
           </div>
