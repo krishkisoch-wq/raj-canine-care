@@ -29,10 +29,10 @@ export const HeroSection = () => {
               Raj Canine Care
             </h1>
             <p className="text-2xl text-gray-700 mb-4 font-medium">
-              Complete Care for Dogs & Cats
+              Complete Care for Dogs & Cats 🐕 🐈
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              Compassionate veterinary care, professional grooming, and premium pet products — all under one roof.
+              Compassionate veterinary care, professional grooming, and premium pet products — all under one roof. Your pet's happiness is our priority! 🐾
             </p>
 
             {/* CTA Buttons */}
