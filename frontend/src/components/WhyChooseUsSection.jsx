@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building, Sparkles, Heart, Smile, Award } from 'lucide-react';
+import { Building, Sparkles, Heart, Smile, Award, Shield } from 'lucide-react';
 import { whyChooseUs } from '../data/mock';
 
 const iconMap = {
@@ -7,7 +7,8 @@ const iconMap = {
   sparkles: Sparkles,
   heart: Heart,
   smile: Smile,
-  award: Award
+  award: Award,
+  shield: Shield
 };
 
 export const WhyChooseUsSection = () => {
