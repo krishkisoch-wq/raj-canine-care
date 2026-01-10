@@ -43,9 +43,11 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">RC</span>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_pawsomecare-4/artifacts/bf8fzg9c_WhatsApp%20Image%202026-01-10%20at%204.30.54%20PM.jpeg"
+              alt="Raj Canine Care Logo"
+              className="h-16 w-auto"
+            />
             <div>
               <h1 className="text-xl font-bold text-blue-900">Raj Canine Care</h1>
               <p className="text-xs text-gray-600">Complete Pet Care</p>
