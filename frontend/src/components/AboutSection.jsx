@@ -29,7 +29,7 @@ export const AboutSection = () => {
             </p>
 
             <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-2xl p-6 mb-6 text-center shadow-lg">
-              <p className="text-blue-900 font-bold text-3xl mb-2">10,000+ Happy Pets Served! 🎉</p>
+              <p className="text-blue-900 font-bold text-3xl mb-2">10,000+ and counting! 🎉</p>
               <p className="text-blue-800">Over two decades of dedicated pet care in Vadodara</p>
             </div>
 
