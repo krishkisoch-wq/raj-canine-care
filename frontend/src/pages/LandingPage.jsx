@@ -6,6 +6,7 @@ import { ServicesSection } from '../components/ServicesSection';
 import { GroomingSection } from '../components/GroomingSection';
 import { ShopSection } from '../components/ShopSection';
 import { WhyChooseUsSection } from '../components/WhyChooseUsSection';
+import { WarningSignsSection } from '../components/WarningSignsSection';
 import { ContactSection } from '../components/ContactSection';
 import { Footer } from '../components/Footer';
 
@@ -19,6 +20,7 @@ const LandingPage = () => {
       <GroomingSection />
       <ShopSection />
       <WhyChooseUsSection />
+      <WarningSignsSection />
       <ContactSection />
       <Footer />
     </div>
