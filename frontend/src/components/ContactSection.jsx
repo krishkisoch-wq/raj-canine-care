@@ -5,6 +5,10 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { useToast } from '../hooks/use-toast';
 import { contactInfo } from '../data/mock';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -28,21 +32,38 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Mock submission - will be replaced with actual API call
-    setTimeout(() => {
+    try {
+      const response = await axios.post(`${API}/contact`, {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        pet_type: formData.petType,
+        message: formData.message
+      });
+
+      if (response.status === 200) {
+        toast({
+          title: "Message Sent Successfully! 🎉",
+          description: "We'll get back to you soon.",
+        });
+        setFormData({
+          name: '',
+          phone: '',
+          email: '',
+          petType: '',
+          message: ''
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
       toast({
-        title: "Message Sent!",
-        description: "We'll get back to you soon.",
+        title: "Error",
+        description: "Failed to send message. Please try again or call us directly.",
+        variant: "destructive"
       });
-      setFormData({
-        name: '',
-        phone: '',
-        email: '',
-        petType: '',
-        message: ''
-      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
