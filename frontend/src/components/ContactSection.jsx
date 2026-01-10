@@ -1,82 +1,19 @@
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { useToast } from '../hooks/use-toast';
+import React from 'react';
+import { Phone, MapPin, Clock } from 'lucide-react';
 import { contactInfo } from '../data/mock';
-import axios from 'axios';
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 
 export const ContactSection = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    petType: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await axios.post(`${API}/contact`, {
-        name: formData.name,
-        phone: formData.phone,
-        email: formData.email,
-        pet_type: formData.petType,
-        message: formData.message
-      });
-
-      if (response.status === 200) {
-        toast({
-          title: "Message Sent Successfully! 🎉",
-          description: "We'll get back to you soon.",
-        });
-        setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          petType: '',
-          message: ''
-        });
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again or call us directly.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-              Contact Us
+              Contact Information
             </h2>
             <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Get in touch with us for appointments or any queries
+              Visit us or call for appointments and queries
             </p>
           </div>
 
@@ -125,9 +62,12 @@ export const ContactSection = () => {
                   <p className="text-lg font-semibold text-blue-900">{contactInfo.timings}</p>
                 </div>
               </div>
+            </div>
 
-              {/* Map - Google Maps Embed */}
-              <div className="mt-8 w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+            {/* Map */}
+            <div>
+              <h3 className="text-2xl font-bold text-blue-900 mb-8">Location</h3>
+              <div className="w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5896179158626!2d73.20287217525447!3d22.326848579689846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf3fd0dcbdeb%3A0x8692c80c0680f5b1!2sSuvidha%20Park!5e0!3m2!1sen!2sin!4v1704902400000!5m2!1sen!2sin"
                   width="100%"
@@ -138,105 +78,6 @@ export const ContactSection = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Raj Canine Care Location"
                 ></iframe>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div>
-              <div className="bg-white p-8 rounded-2xl shadow-xl">
-                <h3 className="text-2xl font-bold text-blue-900 mb-6">Send us a Message</h3>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Your Name *
-                    </label>
-                    <Input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      placeholder="Enter your name"
-                      className="w-full"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number *
-                    </label>
-                    <Input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                      placeholder="Enter your phone number"
-                      className="w-full"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Email
-                    </label>
-                    <Input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="Enter your email"
-                      className="w-full"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Pet Type
-                    </label>
-                    <select
-                      name="petType"
-                      value={formData.petType}
-                      onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <option value="">Select pet type</option>
-                      <option value="dog">Dog</option>
-                      <option value="cat">Cat</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Message *
-                    </label>
-                    <Textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      placeholder="Tell us how we can help..."
-                      rows={4}
-                      className="w-full"
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg"
-                  >
-                    {isSubmitting ? (
-                      'Sending...'
-                    ) : (
-                      <>
-                        <Send className="w-5 h-5 mr-2" />
-                        Send Message
-                      </>
-                    )}
-                  </Button>
-                </form>
               </div>
             </div>
           </div>
