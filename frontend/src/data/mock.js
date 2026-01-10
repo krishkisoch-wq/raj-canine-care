@@ -118,24 +118,30 @@ export const whyChooseUs = [
   },
   {
     id: 2,
+    title: "European Imported Vaccines",
+    description: "We use premium quality vaccines imported from Europe",
+    icon: "shield"
+  },
+  {
+    id: 3,
     title: "Clean & modern setup",
     description: "Hygienic and comfortable environment",
     icon: "sparkles"
   },
   {
-    id: 3,
+    id: 4,
     title: "Honest advice, no over-treatment",
     description: "Ethical and transparent care",
     icon: "heart"
   },
   {
-    id: 4,
+    id: 5,
     title: "Pet-friendly handling",
     description: "Stress-free experience for your pets",
     icon: "smile"
   },
   {
-    id: 5,
+    id: 6,
     title: "Trusted by local pet parents",
     description: "Years of experience and care",
     icon: "award"
