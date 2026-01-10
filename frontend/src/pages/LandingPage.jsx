@@ -15,13 +15,13 @@ const LandingPage = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <AboutSection />
       <ServicesSection />
       <GroomingSection />
       <ShopSection />
       <WhyChooseUsSection />
       <WarningSignsSection />
       <ContactSection />
+      <AboutSection />
       <Footer />
     </div>
   );
