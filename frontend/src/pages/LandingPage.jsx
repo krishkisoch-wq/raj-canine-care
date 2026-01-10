@@ -22,6 +22,7 @@ const LandingPage = () => {
       <GroomingSection />
       <ShopSection />
       <WhyChooseUsSection />
+      <GoogleReviewsSection />
       <WarningSignsSection />
       <ContactSection />
       <AboutSection />
