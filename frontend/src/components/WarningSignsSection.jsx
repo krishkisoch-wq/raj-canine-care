@@ -35,7 +35,7 @@ export const WarningSignsSection = () => {
               <span className="text-red-800 font-medium text-sm">⚠️ Important Pet Health Information</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-              15 Warning Signs 🐾
+              15 Warning Signs to Call Us/Vet 🐾
             </h2>
             <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
