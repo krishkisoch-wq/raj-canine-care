@@ -150,6 +150,6 @@ export const whyChooseUs = [
 
 export const contactInfo = {
   phones: ["9879771213", "9904923988", "7984112327"],
-  address: "Raj Canine Care, Vadodara, Gujarat",
+  address: "Suvidha Park, 5, VIP Road, Near HDFC Bank, Amit Nagar Circle, Karelibaug, Vadodara, Gujarat 390022",
   timings: "Morning & Evening OPD"
 };
