@@ -88,10 +88,14 @@ export const HeroSection = () => {
 
           {/* Right Image Placeholder */}
           <div className="relative">
-            <div className="w-full h-[500px] bg-gradient-to-br from-blue-100 to-yellow-100 rounded-3xl flex items-center justify-center shadow-2xl">
-              <div className="text-center">
-                <p className="text-gray-500 text-lg">Hero Image Placeholder</p>
-                <p className="text-gray-400 text-sm mt-2">Add your pet care image here</p>
+            <div className="w-full h-[500px] bg-gradient-to-br from-blue-100 to-yellow-100 rounded-3xl flex flex-col items-center justify-center shadow-2xl border-4 border-dashed border-blue-300">
+              <div className="text-center p-8">
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <span className="text-5xl">🐕</span>
+                </div>
+                <p className="text-gray-600 text-xl font-bold mb-2">Hero Image Area</p>
+                <p className="text-gray-500 text-sm mb-2">Recommended: Happy pets or clinic exterior photo</p>
+                <p className="text-gray-400 text-xs">(Replace this placeholder with your image)</p>
               </div>
             </div>
             {/* Decorative Elements */}
