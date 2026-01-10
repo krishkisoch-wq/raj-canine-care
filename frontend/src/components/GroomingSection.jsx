@@ -21,22 +21,9 @@ export const GroomingSection = () => {
               Professional Grooming Studio
             </h2>
             <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Complete grooming services in a calm and hygienic environment
             </p>
-            
-            {/* Grooming Photo Area */}
-            <div className="max-w-3xl mx-auto mb-8">
-              <div className="w-full h-64 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl flex flex-col items-center justify-center shadow-lg border-4 border-dashed border-yellow-200">
-                <div className="text-center p-6">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow">
-                    <span className="text-3xl">✂️</span>
-                  </div>
-                  <p className="text-gray-600 font-bold mb-1">Grooming Studio Photo Area</p>
-                  <p className="text-gray-500 text-sm">Add photos of grooming studio, bathing area, or groomed pets</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
