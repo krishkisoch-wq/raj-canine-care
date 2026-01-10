@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
+import { FeaturesSlider } from '../components/FeaturesSlider';
 import { AboutSection } from '../components/AboutSection';
 import { ServicesSection } from '../components/ServicesSection';
 import { GroomingSection } from '../components/GroomingSection';
@@ -15,6 +16,7 @@ const LandingPage = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <FeaturesSlider />
       <ServicesSection />
       <GroomingSection />
       <ShopSection />
