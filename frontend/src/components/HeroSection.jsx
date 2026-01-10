@@ -23,7 +23,7 @@ export const HeroSection = () => {
           {/* Left Content */}
           <div>
             <div className="inline-block px-4 py-2 bg-yellow-100 rounded-full mb-6">
-              <span className="text-yellow-800 font-medium text-sm">Veterinary Clinic • Grooming • Pet Care</span>
+              <span className="text-yellow-800 font-medium text-sm">🐾 Veterinary Clinic • Grooming Studio • Pet Shop 🐾</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6 leading-tight">
               Raj Canine Care
