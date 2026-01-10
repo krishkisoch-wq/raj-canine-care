@@ -19,9 +19,11 @@ export const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
-                <span className="text-blue-900 font-bold">RC</span>
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_pawsomecare-4/artifacts/bf8fzg9c_WhatsApp%20Image%202026-01-10%20at%204.30.54%20PM.jpeg"
+                alt="Raj Canine Care Logo"
+                className="h-12 w-auto"
+              />
               <div>
                 <h3 className="text-lg font-bold">Raj Canine Care</h3>
               </div>
