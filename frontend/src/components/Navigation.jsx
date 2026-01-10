@@ -29,6 +29,7 @@ export const Navigation = () => {
     { name: 'Grooming', id: 'grooming' },
     { name: 'Shop', id: 'shop' },
     { name: 'Why Us', id: 'why-us' },
+    { name: 'Reviews', id: 'google-reviews' },
     { name: 'Warning Signs', id: 'warning-signs' },
     { name: 'Contact', id: 'contact' }
   ];
