@@ -33,6 +33,14 @@ export const HeroSection = () => {
             Compassionate veterinary care, professional grooming, and premium pet products — all under one roof. Your pet's happiness is our priority! 🐾
           </p>
 
+          {/* Stats Badge */}
+          <div className="inline-block mb-8">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-2xl shadow-lg">
+              <p className="text-sm font-medium mb-1">Proud to have served</p>
+              <p className="text-4xl font-bold">10,000+ Pets 🐾</p>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
             <Button
