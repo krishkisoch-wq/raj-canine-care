@@ -126,13 +126,18 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="mt-8 w-full h-64 bg-gradient-to-br from-blue-100 to-yellow-100 rounded-2xl flex items-center justify-center shadow-lg">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                  <p className="text-gray-500">Google Map Embed</p>
-                  <p className="text-gray-400 text-sm">Add map integration here</p>
-                </div>
+              {/* Map - Google Maps Embed */}
+              <div className="mt-8 w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5896179158626!2d73.20287217525447!3d22.326848579689846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf3fd0dcbdeb%3A0x8692c80c0680f5b1!2sSuvidha%20Park!5e0!3m2!1sen!2sin!4v1704902400000!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Raj Canine Care Location"
+                ></iframe>
               </div>
             </div>
 
