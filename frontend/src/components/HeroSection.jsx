@@ -74,20 +74,20 @@ export const HeroSection = () => {
           {/* Quick Highlights */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
             <div className="flex flex-col items-center space-y-2 p-4 bg-white rounded-xl shadow-md">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <p className="text-gray-700 text-sm text-center">Experienced Veterinary Care</p>
+              <span className="text-3xl">🩺</span>
+              <p className="text-gray-700 text-sm text-center font-medium">Experienced Veterinary Care</p>
             </div>
             <div className="flex flex-col items-center space-y-2 p-4 bg-white rounded-xl shadow-md">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <p className="text-gray-700 text-sm text-center">Hygienic Grooming Studio</p>
+              <span className="text-3xl">✨</span>
+              <p className="text-gray-700 text-sm text-center font-medium">Hygienic Grooming Studio</p>
             </div>
             <div className="flex flex-col items-center space-y-2 p-4 bg-white rounded-xl shadow-md">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <p className="text-gray-700 text-sm text-center">Dog & Cat Specialization</p>
+              <span className="text-3xl">🐕</span>
+              <p className="text-gray-700 text-sm text-center font-medium">Dog & Cat Specialization</p>
             </div>
             <div className="flex flex-col items-center space-y-2 p-4 bg-white rounded-xl shadow-md">
-              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <p className="text-gray-700 text-sm text-center">Quality Pet Food & Accessories</p>
+              <span className="text-3xl">🛍️</span>
+              <p className="text-gray-700 text-sm text-center font-medium">Quality Pet Food & Accessories</p>
             </div>
           </div>
         </div>
