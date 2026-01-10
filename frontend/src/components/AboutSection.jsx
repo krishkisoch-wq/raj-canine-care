@@ -28,6 +28,11 @@ export const AboutSection = () => {
               Our clinic is dedicated to providing ethical, transparent, and compassionate care for dogs and cats.
             </p>
 
+            <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-2xl p-6 mb-6 text-center shadow-lg">
+              <p className="text-blue-900 font-bold text-3xl mb-2">10,000+ Happy Pets Served! 🎉</p>
+              <p className="text-blue-800">Over two decades of dedicated pet care in Vadodara</p>
+            </div>
+
             <div className="bg-blue-50 rounded-2xl p-6 mb-6 border-l-4 border-blue-600">
               <h3 className="text-xl font-bold text-blue-900 mb-3">Meet Dr. R. D. Patel</h3>
               <p className="text-sm text-gray-600 mb-2">(B.V.Sc. & A.H.)</p>
