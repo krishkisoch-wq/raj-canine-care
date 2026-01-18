@@ -26,8 +26,8 @@ export const HeroSection = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6 leading-tight">
             Raj Canine Care
           </h1>
-          <p className="text-2xl text-gray-700 mb-4 font-medium">
-            Complete Care for Dogs & Cats 🐕 🐈
+          <p className="!font-medium !text-2xl mb-4 text-gray-700">Complete Care for Dogs & Cats 
+
           </p>
           <p className="text-lg text-gray-600 mb-8">
             Compassionate veterinary care, professional grooming, and premium pet products — all under one roof. Your pet's happiness is our priority! 🐾
@@ -46,8 +46,8 @@ export const HeroSection = () => {
             <Button
               onClick={handleCall}
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
-            >
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg">
+
               <Phone className="w-5 h-5 mr-2" />
               Call Now
             </Button>
@@ -55,8 +55,8 @@ export const HeroSection = () => {
               onClick={handleDirections}
               size="lg"
               variant="outline"
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg"
-            >
+              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg">
+
               <MapPin className="w-5 h-5 mr-2" />
               Get Directions
             </Button>
@@ -64,8 +64,8 @@ export const HeroSection = () => {
               onClick={scrollToContact}
               size="lg"
               variant="outline"
-              className="border-2 border-yellow-500 text-yellow-700 hover:bg-yellow-50 px-8 py-6 text-lg"
-            >
+              className="border-2 border-yellow-500 text-yellow-700 hover:bg-yellow-50 px-8 py-6 text-lg">
+
               <Calendar className="w-5 h-5 mr-2" />
               Contact Info
             </Button>
@@ -92,6 +92,6 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
